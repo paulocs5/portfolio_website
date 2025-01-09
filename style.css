@@ -1,0 +1,445 @@
+body { 
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
+      background-color:#ccc;
+}
+
+/* Fade In transition Part */
+
+@keyframes fadeIn { 
+      0% {
+            opacity: 0;
+            transform: translateY(20px);
+      }
+      100% {
+            opacity: 1;
+            transform: translateY(0);
+      }
+      
+}
+
+.menu-bar{
+      background-color: #003366;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards; /* fade in */
+      box-shadow: 0px 0px 10px blue;    /*Box shadow light*/  
+      
+}
+
+.menu-container {
+      display: flex;
+      gap: 100px;
+      
+}
+
+.menu-link {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-link hover {
+      color: #00aaff;
+      
+}
+
+
+
+
+
+h2:hover {
+      box-shadow: 0px 0px 10px blue;
+      transform: scale(1.1);
+      border-radius: 5px;
+
+}
+
+.introduction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 4px solid black;
+      margin:40px auto;
+      margin-left: 30px;
+      margin-right: 30px;
+      border-radius: 5px;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
+      text-align: center;
+      padding-bottom: 15px;
+      scroll-margin-top: 80px;
+      font-size: larger;
+
+      
+}
+
+.introduction img {
+      width: 300px;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0px solid #003366;
+      transform: scale(1);
+      display: flex;
+}
+
+.intro-image img {
+      width: 600px;
+      height: 600px;
+   
+}
+
+
+.badge-container {
+      display:flex;
+      justify-content: center;
+      gap: 150px;
+      
+}
+
+.badge {
+      width: 200px;
+      height: 100px;
+      transition: transform 0.3 ease, opacity 0,3 ease-in;
+      opacity: .8;
+      display: flex;
+}
+
+.badge:hover {
+      transform: scale(1.1);
+      opacity: 1;
+}
+
+
+.introduction img:hover {
+      transform: scale(1.1)
+}
+
+.list-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 4px solid black;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px; 
+      background-image: url(/images/technology.png);
+      opacity: .86;
+      
+}
+
+.experience {
+      margin: 40px 20px;
+      text-align:left;
+      padding-top: 60px;
+      scroll-margin-top: 10px;
+}
+
+
+.list-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+}
+
+.work-item{
+      display: flex;
+      background-color:beige;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 100%;
+      box-shadow: 0 4px 6px rgba(0, 0 , 0, 0.1);
+}
+
+/* Heading inside experience boxes */
+
+.work-item h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: black;
+}
+
+.work-item ul {
+      padding: 0;
+      list-style-type: disc;
+      margin-left: 50px;
+}
+
+.work-item li {
+      margin-bottom: 10px;
+      font-size: 20px;
+      
+}
+
+h2 {
+     font-family: 'Times New Roman', Times, serif;
+     transform: scale(1);
+     font-size: medium;
+     display: inline-block;
+     padding: 5px;
+     margin: 0;
+}
+
+h1 {
+      font-size: large;
+      transform: scale(1);
+      display: inline-block;
+      padding: 5px;
+      margin: 0;
+}
+
+.projects2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh; /* Optional, if you want the text centered vertically in the full screen */
+}
+  
+.projects2 h1 {
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            color: rgb(16, 77, 76);
+            margin-top: 50px;
+            font-size: 36px;
+            justify-content: center;
+            
+}
+
+h1:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px blue;                /*blue box shadow*/
+      transform: scale(1.1);
+      border-radius: 5px;
+}
+
+
+/*Mobile Devices Adjustment*/
+@media (max-width: 768px) {
+      .introduction {
+          margin: 20px auto;
+          padding: 15px;
+          scroll-margin-top: 200px;
+      }
+  
+      .intro-image {
+          max-width: 120px; /* Reduce size of the profile picture */
+      }
+  
+      .badge-container {
+          gap: 10px; /* Decrease spacing between badges */
+      }
+  
+      .badge {
+          width: 60px; /* Reduce badge size further for smaller screens */
+      }
+  
+      .work-item h3 {
+          font-size: 16px; /* Adjust font size for experience titles */
+      }
+  
+      .work-item h2 {
+          font-size: 14px; /* Adjust font size for organization names */
+      }
+  
+      .work-item li {
+          font-size: 14px; /* Adjust font size for experience details */
+          line-height: 1.4; /* Improve readability on smaller screens */
+      }
+
+      .menu-bar{
+            display: flex;
+           justify-content: space-around;
+           padding: 15px;     
+           gap: 10px;
+           background-color: #003366;
+           position:sticky;
+           
+           width: 100%;
+           z-index: 1000;
+
+      }
+
+      .menu-container {
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+      }
+
+      .menu-link {
+            font-size: 16px;
+            padding: 10px 0 ;
+      }
+
+      .badge-container {            /* to make the badges go vertically */
+            flex-direction: column;
+            gap: 10px;
+
+      }
+
+      .experience {
+            padding-top: 50px;
+            scroll-margin-top: 180px;
+
+      }
+
+      .projects {
+            flex-direction: column;
+            gap: 30px;
+            padding: 10px;
+            scroll-margin-top: 4000px;
+      }
+
+
+      
+      .project-card {
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+      }
+
+      .project-front {
+            justify-content: space-around;
+      }
+  }
+
+
+  /* STYLYING FOR PROJECTS SECTION (Flip Cards) */
+
+  .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 50px auto;
+      max-width: 1200px;
+
+  }
+
+  .project-card {
+      width: 500px;
+      height: 500px;
+      perspective: 500px;
+      gap: 20px;
+  }
+  
+  .project-front, .project-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform .6s;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+.project-front {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align:justify;
+}
+
+.project-front img {
+      max-width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 1px solid rgb(247, 229, 164);
+}
+
+.project-title {
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+
+}
+
+.project-back {
+      background-color:azure;
+      transform: rotateY(180deg);
+      padding: 20px;
+      text-align: center;
+}
+
+.project-back img {
+      max-width: 100%;
+      max-height: 90%; 
+      padding-top: 40px;
+
+}
+
+.project-card:hover .project-front {
+      transform: rotateY(180deg);
+}
+
+.project-card:hover .project-back {
+      transform: rotateY(0deg);
+}
+
+.close-card {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+.close-card:hover {
+      background-color:bisque;
+}
+
+/* FOOTER */
+
+.footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333; 
+      color: white;
+      padding: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      box-shadow: 0px 0px 10px blue; 
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      text-align: center;
+  }
+  
+  .footer-content span {
+      flex: 1; 
+      text-align: center;
+      
+  }
+
+
+  
